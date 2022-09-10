@@ -19,10 +19,18 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
+  min-height: 100vh;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 }
