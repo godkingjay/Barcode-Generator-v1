@@ -40,7 +40,7 @@ main {
 .card {
   padding: 1.5rem;
   background: #f4f4f4;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   width: 100%;
   max-width: 768px;
   box-shadow: -4px 4px 4px #0004,
