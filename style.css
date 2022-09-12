@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Montserrat;
-  src: url('fonts/Montserrat-Regular.ttf');
+  font-family: Oswald;
+  src: url('fonts/Oswald-Regular.ttf');
 }
 
 *, *:after, *:before {
@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
-  font-family: Montserrat, sans-serif;
+  font-family: Oswald, sans-serif;
   background: white;
 }
 
@@ -40,7 +40,7 @@ main {
 
 .card {
   padding: 1.5rem;
-  background: #f8f8f8;
+  background: linear-gradient(180deg, rgb(50, 200, 255), rgb(0, 150, 255));
   border-radius: 1.5rem;
   width: 100%;
   max-width: 768px;
@@ -51,6 +51,41 @@ main {
   overflow: hidden;
 }
 
-@media (min-width: 769px) {
-  
+.card > h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.barcode-generator-interface {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.input-field {
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #fffc;
+  width: 100%;
+}
+
+@media (max-width: 26rem) {
+  .input-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
