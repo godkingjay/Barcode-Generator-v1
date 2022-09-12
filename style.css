@@ -26,7 +26,8 @@ main {
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
+  margin-block: 5rem;
+  margin-inline: 1rem;
 }
 
 .main-content {
@@ -39,14 +40,14 @@ main {
 
 .card {
   padding: 1.5rem;
-  background: #f4f4f4;
+  background: #f8f8f8;
   border-radius: 1.5rem;
   width: 100%;
   max-width: 768px;
   box-shadow: -4px 4px 4px #0004,
               2px -2px 2px #0002,
-              inset -4px 4px 4px white,
-              inset 2px -2px 2px white;
+              inset -4px 4px 4px #fff8,
+              inset 2px -2px 2px #fff8;
   overflow: hidden;
 }
 
